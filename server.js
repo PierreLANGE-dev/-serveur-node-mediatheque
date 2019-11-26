@@ -1,0 +1,25 @@
+﻿var express = require("express"),
+  fichesRouter = require("./router/fiches"),
+  emplacementsRouter = require("./router/emplacements"),
+  app = express();
+
+var cors = require("cors");
+var bodyParser = require("body-parser");
+
+app.use(cors()); // Ne jamais enlever les limits
+app.use(bodyParser.json({ limit: "50mb" }));
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
+app.use(express.static(__dirname));
+app.use("/", fichesRouter);
+app.use("/", emplacementsRouter);
+
+var port = process.env.PORT || 8082; // local tu définis ton port toi même // sur heroku
+
+app
+  .listen(port, function() {
+    process.stdout.write("\033c");
+    console.log("Server express ecoute sur le port %s", port);
+  })
+  .on("error", function(e) {
+    console.error(e.message);
+  });
