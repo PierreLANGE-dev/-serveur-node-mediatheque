@@ -34,7 +34,7 @@ router.put("/updateFiches", function(req, res) {
   });
 });
 
-router.get("/tpl", function(req, res) {
+/*router.get("/tpl", function(req, res) {
   res.sendFile(path.resolve(__dirname + "/DATAS/tpl.html"));
   console.log("Chargement du template");
 });
@@ -63,6 +63,6 @@ router.put("/saveFiches/:fiches", function(req, res) {
 
     res.end(data);
   });
-});
+});*/
 
 module.exports = router;
