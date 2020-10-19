@@ -1,4 +1,4 @@
-[{  
+{  
 "civilite" : {
     "nom": "Pierre LANGE",
     "anneExperience": "11 années d'expérience",
@@ -7,28 +7,28 @@
     "adressePortfolio":
       "https://cv-pierre-lange.herokuapp.com/Portfolio-pierre-lange.pdf"
   }
-},
-{
+,
+
   "adresse" : {
     "portable": "06 23 95 24 02",
     "email": "pierre.lange@gmail.com",
     "lieu": "10 rue Pablo Neruda 77200 Torcy"
   }
-},
-{
+,
+
   "poste" :{
     "libelle": "Concepteur Développeur front-end"
   }
-},
-{
+,
+
   "domaineDeComp" : {
     "libelleObjectif":
       "Souhaite acquérir des compétences complémentaires sur : SYMFONY + REACT - SYMFONY + ANGULAR - REACT + NODE.JS",
     "libelleDomaineDeComp":
       "HTML 5 / CSS 3 - Bootstrap - JQuery - Angular JS - ANGULAR 2/8 - React JS - Nodes.js"
   }
-},
-{
+,
+
   "domaineDeCompDatas" : [
     {
       "dataLibelle": "Médiathèque (Angular JS)",
@@ -46,8 +46,8 @@
       "dataText": "https://cv-pierre-lange.herokuapp.com"
     }
   ]
-},
-{
+,
+
   "formations" : [
     {
       "annee": "09-2019",
@@ -73,8 +73,8 @@
       "text": "Contrat de qualification : window 3.1 / windows 95 / étude hardware"
     }
   ]
-},
-{
+,
+
   "experiences" : [
     {
       "periode": "2013-2019",
@@ -147,8 +147,8 @@
       ]
     }
   ]
-},
-{
+,
+
   "hobbys" : [
     {
       "libelle": "M.A.O / sculpture sur bois",
@@ -156,5 +156,5 @@
       "textLink": "https://pierrelange.wixsite.com/stone-co"
     }
   ]
+
 }
-]
