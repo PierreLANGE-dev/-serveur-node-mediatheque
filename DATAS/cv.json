@@ -1,0 +1,160 @@
+[{  
+"civilite" : {
+    "nom": "Pierre LANGE",
+    "anneExperience": "11 années d'expérience",
+    "situation": "Marié, 1 enfant",
+    "permis": " ans / Permis B",
+    "adressePortfolio":
+      "https://cv-pierre-lange.herokuapp.com/Portfolio-pierre-lange.pdf",
+  }
+},
+{
+  "adresse" : {
+    "portable": "06 23 95 24 02",
+    "email": "pierre.lange@gmail.com",
+    "lieu": "10 rue Pablo Neruda 77200 Torcy",
+  }
+},
+{
+  "poste" :{
+    "libelle": "Concepteur Développeur front-end",
+  }
+},
+{
+  "domaineDeComp" : {
+    "libelleObjectif":
+      "Souhaite acquérir des compétences complémentaires sur : SYMFONY + REACT - SYMFONY + ANGULAR - REACT + NODE.JS",
+    "libelleDomaineDeComp":
+      "HTML 5 / CSS 3 - Bootstrap - JQuery - Angular JS - ANGULAR 2/8 - React JS - Nodes.js",
+  }
+},
+{
+  "domaineDeCompDatas" : [
+    {
+      "dataLibelle": "Médiathèque (Angular JS)",
+      "dataLink": "https://mediatheque-disquaire.herokuapp.com",
+      "dataText": "https://mediatheque-disquaire.herokuapp.com",
+    },
+    {
+      "dataLibelle": "Démo React.JS Calm thème",
+      "dataLink": "https://app-demo-react-calmtheme.herokuapp.com",
+      "dataText": "https://app-demo-react-calmtheme.herokuapp.com",
+    },
+    {
+      "dataLibelle": "Ce CV en ligne React.JS",
+      "dataLink": "https://cv-pierre-lange.herokuapp.com",
+      "dataText": "https://cv-pierre-lange.herokuapp.com",
+    }
+  ]
+},
+{
+  "formations" : [
+    {
+      "annee": "09-2019",
+      "titre": "Formation Concepteur Développeur Front End / APP Boulogne",
+      "text":
+        "Environnement technique : HTML-CSS Javacript jGuery React.js & Node.js",
+    },
+    {
+      "annee": "2012",
+      "titre": "Formation Java JEE / liferay (Ecole Aston - SQLI - ARCUEIL)",
+      "text":
+        "Environnement technique : Java JEE, protail Liferay 6.0, XSLT, XML, SPRING, SPRING MVC, JSF 2.0,Maven, Hibernete, Tomcat 6.0, Mysql, Eclipse, Git.",
+    },
+    {
+      "annee": "2008",
+      "titre": "BTS développeur informatique spécialisation internet(AFPA - Rouen)",
+      "text":
+        "Environnement technique : VB / .net, SQL, MySQL, PHP,JEE, Applet, Servlet, ASP, UML.",
+    },
+    {
+      "annee": "1995",
+      "titre": "Brevet de technicien de maintenance en Micro-informatique",
+      "text": "Contrat de qualification : window 3.1 / windows 95 / étude hardware",
+    }
+  ]
+},
+{
+  "experiences" : [
+    {
+      "periode": "2013-2019",
+      "titre": "Ingénieur Concepteur Développeur",
+      "titreUP": "SQLI(SSII - LEVALLOIS-PERRET)",
+      "text": [
+        {
+          "titre": "3 ans - Web Master",
+          "commentaire": "Edf - publications journalières et hebdomadaires",
+        },
+        { "titre": "", "commentaire": "BMW - maintenance des sites partnaires BMW" },
+        {
+          "titre": "2 ans - Développeur ANGULAR JS",
+          "commentaire":
+            "PACIFICA (Crédits Agricoles) - Projet NEWSÉSAME - passage de la gestion de l'assurance maison par terminal sous forme de site web",
+        },
+        {
+          "titre": "1 ans - Thèmes LIFERAY (HTML - CSS - Java JEE)",
+          "commentaire":
+            "Thèmes LIFERAY - auchan - LVMH - AXA Maroc - filière d'EDF",
+        }
+      ]
+    },
+    {
+      "periode": "2009-2013",
+      "titre": "Développeur Windev",
+      "titreUP": "Agilicio(SSII - boulogne)",
+      "text": [
+        {
+          "titre": "",
+          "commentaire":
+            "GROUPAMA / GGvie - Renfort en paramétrage CRM interne à la branche GGVie de Groupama",
+        },
+        {
+          "titre": "",
+          "commentaire":
+            "Ring Tour / CRM - publications journalières et hebdomadères",
+        },
+        {
+          "titre": "",
+          "commentaire":
+            "Ponticelli Frères SA - Feuille de temps et fiches de planning",
+        },
+        {
+          "titre": "",
+          "commentaire":
+            "Cadeau relation / CRM - Création d’un module servant à envoyer des cartes cadeau électronique par le biais d’un web service.",
+        }
+      ]
+    },
+    {
+      "periode": "2008-2009",
+      "titre": "Développeur Windev",
+      "titreUP": "Synchrotron soleil(accélérateurn de particule - Saint-Aubin )",
+      "text": [
+        {
+          "titre": "",
+          "commentaire": "Projet : Portail organisationnel de Meeting.",
+        },
+        {
+          "titre": "",
+          "commentaire":
+            "Sous Webdev, réalisation de diverses pages web de colloques",
+        },
+        {
+          "titre": "",
+          "commentaire":
+            "Sous Windev en interne : Une application pour un concours photo lié à LDAP",
+        }
+      ]
+    }
+  ]
+},
+{
+  "hobbys" : [
+    {
+      "libelle": "M.A.O / sculpture sur bois",
+      "link": "https://pierrelange.wixsite.com/stone-co",
+      "textLink": "https://pierrelange.wixsite.com/stone-co",
+    }
+  ]
+}
+]

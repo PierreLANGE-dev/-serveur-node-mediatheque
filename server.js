@@ -1,6 +1,7 @@
 ﻿var express = require("express"),
   fichesRouter = require("./router/fiches"),
   emplacementsRouter = require("./router/emplacements"),
+  cvRouter = require("./router/cv"),
   app = express();
 
 var cors = require("cors");
@@ -12,6 +13,7 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 app.use(express.static(__dirname));
 app.use("/", fichesRouter);
 app.use("/", emplacementsRouter);
+app.use("/", cvRouter);
 
 var port = process.env.PORT || 8082; // local tu définis ton port toi même // sur heroku
 

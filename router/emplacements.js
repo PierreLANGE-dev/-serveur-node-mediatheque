@@ -38,24 +38,4 @@ router.put("/updateEmplacements", function(req, res) {
   console.log("update de la liste des Emplacements ok");
 });
 
-/*router.all("/*", function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  next();
-});*/
-
-/*router.put("/saveEmplacements/:emplacements", function(req, res) {
-  fs.readFileSync(pathData, "utf8", function(err, data) {
-    data = JSON.parse(data);
-
-    var fiches = req.params.emplacements;
-
-    fs.writeFileSync(pathData, emplacements, "UTF-8");
-
-    console.log("liste des Emplacements Sauvegardée");
-
-    res.end(data);
-  });
-});*/
-
 module.exports = router;

@@ -4,9 +4,9 @@ var express = require("express"),
 
 var path = require("path");
 
-var pathData = path.resolve(__dirname, "..", "DATAS/DATA.json");
+var pathData = path.resolve(__dirname, "..", "DATAS/cv.json");
 
-router.get("/listFiches", function(req, res) {
+router.get("/dataCV", function(req, res) {
   fs.readFile(pathData, "utf8", function(err, data) {
     if (err) return res.end("Erreur dans le chargement des donnees");
     res.writeHead(200, { "Content-Type": "application/json" });
@@ -15,7 +15,7 @@ router.get("/listFiches", function(req, res) {
 });
 
 //update FICHE
-router.put("/updateFiches", function(req, res) {
+router.put("/updateCV", function(req, res) {
   var arr = [];
   for (var index in req.body) {
     arr.push(req.body[index]);
