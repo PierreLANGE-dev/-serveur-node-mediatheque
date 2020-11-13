@@ -30,6 +30,7 @@ router.put("/updateCV", function (req, res) {
     if (err) return res.end("Erreur dans le chargement des données");
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(data);
+    res.send("sauvegarde du cv ok");
   });
 });
 
