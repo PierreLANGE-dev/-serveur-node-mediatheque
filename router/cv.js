@@ -14,7 +14,7 @@ router.get("/dataCV", function (req, res) {
   });
 });
 
-//update FICHE
+//update cv
 router.put("/updateCV", function (req, res) {
   var arr = [];
   for (var index in req.body) {
@@ -24,13 +24,11 @@ router.put("/updateCV", function (req, res) {
 
   fs.writeFile(pathData, jsonData, function (err) {
     if (err) {
-      console.log("problème lors de la mis à jour de la bdd json");
-      return res
-        .status(500)
-        .end("problème lors de la mis à jour de la bdd json");
+      console.log("problème lors de la mis à jour du cv json");
+      return res.status(500).end("problème lors de la mis à jour du cv json");
     }
-    console.log("sauvegarde de la liste des fiches ok");
-    res.end("update de la liste des fiches ok");
+    console.log("sauvegarde  du cv ok");
+    res.end("update du cv ok");
   });
 });
 
