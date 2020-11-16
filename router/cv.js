@@ -20,17 +20,17 @@ router.put("/updateCV", function (req, res) {
   for (var index in req.body) {
     arr.push(req.body[index]);
   }
+  var jsonData = JSON.stringify(arr);
 
-  var jsonData = JSON.stringify(arr, null, 2);
-
-  var normalPath = path.normalize(pathData);
-
-  fs.writeFile(normalPath, jsonData, function (err, data) {
-    console.log("sauvegarde du cv ok");
-    if (err) return res.end("Erreur dans le chargement des données");
-    res.writeHead(200, { "Content-Type": "application/json" });
-    res.end(data);
-    res.send("sauvegarde du cv ok");
+  fs.writeFile(pathData, jsonData, function (err) {
+    if (err) {
+      console.log("problème lors de la mis à jour de la bdd json");
+      return res
+        .status(500)
+        .end("problème lors de la mis à jour de la bdd json");
+    }
+    console.log("sauvegarde de la liste des fiches ok");
+    res.end("update de la liste des fiches ok");
   });
 });
 
