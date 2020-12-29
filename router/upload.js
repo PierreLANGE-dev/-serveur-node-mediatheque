@@ -1,9 +1,8 @@
 var express = require("express"),
   router = express.Router();
 
-var path = require("path");
-
 const multer = require("multer");
+
 const upload = multer({
   dest: __dirname + "/images",
   limits: { fileSize: 1000000 },
