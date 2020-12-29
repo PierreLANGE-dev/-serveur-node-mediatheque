@@ -1,0 +1,1057 @@
+.noVisible {
+  display: none;
+}
+
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: auto;
+  max-width: 1280px;
+  max-height: 1024px;
+  padding: 0;
+}
+
+body.ng-scope {
+  padding: 0;
+  font-size: 11px;
+  line-height: 29px;
+}
+
+ul.ulBoutonsGestFiche {
+  margin: 0;
+  position: absolute;
+  right: -5px;
+  top: 10px;
+}
+
+ul.ulBoutonsGestFiche li {
+  display: -webkit-box;
+  height: 35px;
+  margin-top: 5px;
+}
+
+li {
+  list-style: outside none none;
+}
+
+.ulBoutonsGestFiche li button.col-md-1.btn-lg.btn-success {
+  padding: 10px;
+  padding-right: 25px;
+  box-sizing: content-box;
+  z-index: 10;
+}
+
+.ulBoutonsGestFiche li button.col-md-1.btn-success .glyphicon {
+  top: -3px;
+}
+
+.dumemetris:hover,
+.dumemetris:hover .musiciens,
+li:hover div {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#72d0f4+0,72d0f4+100&0.7+0,0.7+100 */
+  background: -moz-linear-gradient(left, rgba(114, 208, 244, 0.6) 0%, rgba(114, 208, 244, 0.6) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(114, 208, 244, 0.6) 0%, rgba(114, 208, 244, 0.6) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(114, 208, 244, 0.6) 0%, rgba(114, 208, 244, 0.6) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b372d0f4', endColorstr='#b372d0f4', GradientType=1);
+  /* IE6-9 */
+  color: #000;
+}
+
+li.head:hover {
+  background-color: #ffffff;
+}
+
+li.emplacement {
+  margin-left: -122px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: table;
+}
+
+.corps {
+  border: 2px solid;
+  box-sizing: border-box;
+  min-height: 100%;
+  height: 100%;
+  /*margin: 5px;*/
+  border-radius: 4px;
+  display: table;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8baee5+0,8baee5+100 */
+  background: rgba(159, 194, 249,0.9);
+  /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(159, 194, 249, 0.9) 0%, rgba(159, 194, 249, 0.9) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(159, 194, 249, 0.9) 0%, rgba(159, 194, 249, 0.9) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(159, 194, 249, 0.9) 0%, rgba(159, 194, 249, 0.9) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#8baee5', endColorstr='#8baee5', GradientType=0.9);
+  /* IE6-9 */
+}
+
+.jumbotron.col-md-12.sidebar,
+.jumbotron.col-md-8.colgauche {
+  background-color: transparent;
+}
+
+.jumbotron.col-md-12.sidebar,
+.haut.sidebar.bas {
+  margin-top: 15px;
+  min-width: 100%;
+}
+
+.row {
+  display: table-row;
+  height: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 100%;
+}
+
+.colform {
+  border-right: 2px solid;
+  display: table-cell;
+  height: 50%;
+  min-height: 100%;
+  max-height: 843px;
+}
+
+.musiciens,
+.titres {
+  /*border-left : 2px solid;
+  border-top : 2px solid;
+  border-bottom : 2px solid;*/
+}
+
+img.jaquette {
+  margin-left: 0;
+  border: none;
+  margin-top: 0px;
+}
+
+.jaquette {
+  border: 1px solid;
+  width: 160px;
+  height: 160px;
+  margin: -1px 0 0 -31px;
+  background-image: url("../images/4744.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 150px auto;
+}
+
+.btnplusfiche {
+  float: right;
+  margin-top: 5px;
+  position: absolute;
+  right: 13px;
+  z-index: 10;
+}
+
+.cssfiche {
+  margin-left: 35px;
+}
+
+.titres.colright,
+.musiciens.colright {
+  /*border-right : 2px solid;*/
+}
+
+.headertris .musiciens.colleft {
+  border-left: medium none;
+}
+
+.headertris .musiciens.colright {
+  border-right: medium none;
+}
+
+.bodymusiciens .musiciens,
+.bodytitres .titres {
+  border-top: 0 none;
+}
+
+.container.sidebar {
+  width: 100%;
+}
+
+.row.sidebar {
+  height: 250px;
+  max-height: 250px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.jumbotron.col-md-8 > h3 {
+  margin-left: 47px;
+}
+
+.jumbotron.sidebar > h3 {
+  margin-top: 0;
+}
+
+.container.sidebar h3 {
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 5px;
+}
+
+.cssgenre > h3 {
+  line-height: 22px!important;
+}
+
+.haut {
+  max-height: 380px;
+  min-height: 380px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*border-bottom: 2px solid #23527C;*/
+}
+/* .haut:hover{
+  overflow-y: auto;
+} */
+.container.blocTitre {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.haut.sidebar {
+  min-height: 272px;
+  max-height: 272px;
+}
+
+.haut.sidebar.bas {
+  border-bottom: none;
+  min-height: 161px;
+  max-height: 161px;
+  min-width: 100%;
+}
+
+.haut > h3 {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+.titretitres {
+  float: left;
+  width: 50%;
+}
+
+.numfiche {
+  width: 50%;
+  text-align: right;
+}
+
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-left: -20px;
+  padding-right: -20px;
+}
+
+.colgauche .container {
+  margin: 0;
+  min-width: 100%;
+}
+
+.container.haut {
+  margin-left: 15px;
+}
+
+.haut .container {
+  margin-left: -1px;
+  margin-right: -3px;
+  width: 100%;
+}
+
+.col-md-1.titres {
+  width: 3.233%;
+}
+
+.blocfiche {
+  min-height: 220px;
+  max-height: 220px;
+  padding-left: 22px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.search-num-fiche{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -45%;
+}
+
+.col-md-2.titres {
+  width: 19.235%;
+  max-height: 31px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.col-md-2.musiciens.colright {
+  width: 18.667%;
+}
+
+.col-md-2.musiciens.colright.head {
+  /*border-right: 2px solid;*/
+}
+
+.col-md-1.musiciens.head {
+  border-left: medium none;
+}
+
+.celloverflow {
+  max-height: 29px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.col-md-4.titres {
+  max-height: 31px;
+  overflow-y: auto;
+  width: 32%;
+}
+
+.col-md-5.musiciens.colright {
+  width: 37.567%;
+  margin-right: -7px;
+  white-space: nowrap;
+}
+
+.container.sidebar.basentete {
+  margin: 0;
+  max-height: 36px;
+  min-height: 36px;
+  width: 100%;  
+  margin-bottom: 0;
+}
+
+.colgauche .container.bas {
+  margin: 0;
+  max-height: 250px;
+  /* min-height: 250px; */
+  overflow-y: auto;
+  margin-top: -5px;
+  width: 100%;
+}
+
+.container.bas.tresbas {
+  border-top: 2px solid;
+  margin-top: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,1e5799+9,a1c0f4+10,a1c0f4+33,1e5799+34,1e5799+56,a1c0f4+57,a1c0f4+65,1e5799+66,1e5799+82,a1c0f4+83&0.6+0,0.6+8,0.6+44,0.6+68,0.6+90 */
+  background: -moz-linear-gradient(left, rgba(136, 173, 234, 0.6) 0%, rgba(136, 173, 234, 0.6) 8%, rgba(156, 186, 237, 0.6) 8%, rgba(156, 186, 237, 0.6) 31%, rgba(136, 173, 234, 0.6) 31%, rgba(136, 173, 234, 0.6) 54%, rgba(156, 186, 237, 0.6) 54%, rgba(156, 186, 237, 0.6) 62%, rgba(136, 173, 234, 0.6) 62%, rgba(136, 173, 234, 0.6) 77%, rgba(156, 186, 237, 0.6) 77%, rgba(156, 186, 237, 0.6) 90%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(136, 173, 234, 0.6) 0%, rgba(136, 173, 234, 0.6) 8%, rgba(156, 186, 237, 0.6) 8%, rgba(156, 186, 237, 0.6) 31%, rgba(136, 173, 234, 0.6) 31%, rgba(136, 173, 234, 0.6) 54%, rgba(156, 186, 237, 0.6) 54%, rgba(156, 186, 237, 0.6) 62%, rgba(136, 173, 234, 0.6) 62%, rgba(136, 173, 234, 0.6) 77%, rgba(156, 186, 237, 0.6) 77%, rgba(156, 186, 237, 0.6) 90%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(136, 173, 234, 0.6) 0%, rgba(136, 173, 234, 0.6) 8%, rgba(156, 186, 237, 0.6) 8%, rgba(156, 186, 237, 0.6) 31%, rgba(136, 173, 234, 0.6) 31%, rgba(136, 173, 234, 0.6) 54%, rgba(156, 186, 237, 0.6) 54%, rgba(156, 186, 237, 0.6) 62%, rgba(136, 173, 234, 0.6) 62%, rgba(136, 173, 234, 0.6) 77%, rgba(156, 186, 237, 0.6) 77%, rgba(156, 186, 237, 0.6) 90%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#991e5799', endColorstr='#99a1c0f4', GradientType=1);
+  /* IE6-9 */
+  )
+}
+
+.headertris {
+  margin-top: 5px;
+}
+
+.headertris a {
+  color: #000;
+}
+
+.jumbotron .btn,
+.colform .btn {
+  font-size: 15px;
+  padding: 0 4px;
+}
+
+.jumbotron.col-md-8.colgauche {
+  max-height: 840px;
+  border-bottom: none;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header,
+.marketing,
+.footer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* Custom page header */
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 0;
+}
+
+
+/* Make the masthead heading the same height as the navigation */
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+
+
+/* Custom page headerMenu */
+
+.navbar {
+  min-height: 100%;
+  max-height: 35px;
+}
+
+.head {
+  font-size: 17px;
+}
+
+.col-md-1.titres.head {
+  padding-left: 6px;
+  padding-right: 24px;
+}
+
+.sousmenu {
+  display: none;
+}
+
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-left: -20px;
+  padding-right: -20px;
+  marging-left: -20px;
+  marging-right: -20px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 8px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.navbar-brand {
+  padding: 7px;
+}
+
+
+/* Custom page footer */
+
+.footer {
+  padding-top: 10px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 10px 0;
+}
+
+
+/* Main marketing message and sign up button */
+
+.jumbotron {
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  height: 100%;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.container .jumbotron,
+.container-fluid .jumbotron {
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.jumbotron.sidebar {
+  width: 102%;
+}
+
+.container.sidebar.bas{
+  margin-left: 0;
+  overflow-y: hidden;
+  margin-top: 0px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,1e5799+50,a1c0f4+51,a1c0f4+62&0.6+0,0.6+50 */
+  background: -moz-linear-gradient(left, rgba(136, 173, 234, 0.6) 0%, rgba(136, 173, 234, 0.6) 50%, rgba(156, 186, 237, 0.6) 51%, rgba(156, 186, 237, 0.6) 62%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(136, 173, 234, 0.6) 0%, rgba(136, 173, 234, 0.6) 50%, rgba(156, 186, 237, 0.6) 51%, rgba(156, 186, 237, 0.6) 62%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(136, 173, 234, 0.6) 0%, rgba(136, 173, 234, 0.6) 50%, rgba(156, 186, 237, 0.6) 51%, rgba(156, 186, 237, 0.6) 62%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#991e5799', endColorstr='#99a1c0f4', GradientType=1);
+  /* IE6-9 */
+}
+
+.container.sidebar.bas li {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfe7fa+98,008df9+100&0.48+98,1+100 */
+  background: -moz-linear-gradient(top, rgba(207, 231, 250, 0.48) 98%, rgba(0, 141, 249, 1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(207, 231, 250, 0.48) 98%, rgba(0, 141, 249, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(207, 231, 250, 0.48) 98%, rgba(0, 141, 249, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7acfe7fa', endColorstr='#008df9', GradientType=0);
+  /* IE6-9 */
+}
+
+.container.sidebar.bas li.row.headermusiciens {
+  background: none;
+}
+
+
+/* Supporting marketing content */
+
+.marketing {
+  margin: 20px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.jumbotron.colgauche {
+  max-height: 860px;
+}
+
+.colform .btn {
+  font-size: 17px;
+  padding: 0 6px;
+}
+
+.colgauche .container .row > .col-md-1.plus,
+.colgauche .container .row > .col-md-1.moins,
+.jumbotron .btn {
+  font-size: 15px;
+  padding: 0 2px;
+  padding-top: 2px;
+  width: 5.4%;
+}
+
+.colgauche .container .row > .col-md-1.plus,
+.colgauche .container .row > .col-md-1.moins {
+  width: 2.8%;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.colgauche .container .row > .col-md-1.plus {
+  padding-left: 2px;
+}
+
+.container.bas {
+  max-height: 250px;
+  /* min-height: 250px; */
+  overflow-y: auto;
+}
+
+.col-md-1.musiciens.colleft {
+  height: 29px;
+  overflow: hidden;
+}
+
+.dumeme {
+  height: 330px;
+  max-height: 330px;
+  overflow-y: scroll;
+  padding-left: 0;
+  margin-top: -1px;
+  width: 100%;
+}
+
+.dumemeentete {
+  height: 36px!important;
+  max-height: 36px!important;
+  padding-left: 0;
+  margin-bottom: 0;
+  width: 97%;
+  margin-left: -10px!important;
+}
+
+.dumeme li {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfe7fa+98,008df9+100&0.48+98,1+100 */
+  background: -moz-linear-gradient(top, rgba(207, 231, 250, 0.48) 98%, rgba(0, 141, 249, 1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(207, 231, 250, 0.48) 98%, rgba(0, 141, 249, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(207, 231, 250, 0.48) 98%, rgba(0, 141, 249, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7acfe7fa', endColorstr='#008df9', GradientType=0);
+  /* IE6-9 */
+  min-height: 29px;
+  position: relative;
+}
+
+.dumeme li.dumemetris ul.sousmenu li:after,
+.dumeme li.dumemetris ul.sousmenu li:before {
+  bottom: 100%;
+  left: 80%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.dumeme li.dumemetris ul.popleft.sousmenu li:after,
+.dumeme li.dumemetris ul.popleft.sousmenu li:before {
+  left: 20%;
+}
+
+.dumeme li.dumemetris ul.popright.sousmenu li:after,
+.dumeme li.dumemetris ul.popright.sousmenu li:before {
+  left: 80%;
+}
+
+.dumeme li.dumemetris ul.sousmenu li:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.dumeme li.dumemetris ul.sousmenu li:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-bottom-color: #000;
+  border-width: 11px;
+  margin-left: -11px;
+}
+
+.dumeme li.dumemetris ul.sousmenu li,
+.navbar-nav li ul.sousmenu li {
+  position: absolute;
+  width: 300px;
+  z-index: 1000;
+}
+
+.navbar-nav li ul.sousmenu li {
+  top: 30px;
+  left: 14px;
+}
+
+.navbar-nav li ul.sousmenu li > span,
+.navbar-nav li ul.sousmenu li > a {
+  font-size: 16px;
+  color: #337ab7;
+}
+
+.dumeme ul.sousmenu li {
+  background-color: #fff1a8;
+  border: 1px solid #fff;
+  box-shadow: 3px 3px 9px #0e0e0e;
+  padding-left: 10px;
+  top: 20px;
+}
+
+.dumeme ul.sousmenu.popright li {
+  right: 20px;
+}
+
+.dumeme ul.sousmenu.popleft li {
+  left: 20px;
+}
+
+.dumeme li:hover ul.sousmenu,
+.navbar-nav li:hover ul.sousmenu {
+  display: block;
+  list-style: none;
+}
+
+.dumemetris .musiciens.colleft {
+  border-left: 0 none;
+}
+
+.dumemetris .musiciens {
+  border-right: 0 none;
+  border-top: 0 none;
+}
+
+.col-md-3.musiciens {
+  width: 24%;
+}
+
+.musiciens.colleft.id {
+  float: left;
+  width: 2%;
+}
+
+.check {
+  position: relative;
+  /*background-image: url("../images/chevron-bas.png");
+  background-color: transparent;
+  background-position: 6px -7px;
+  background-repeat: no-repeat;
+  background-size: 35px 20px;
+  background: #9EBEF2;*/
+}
+
+.check:after,
+.check:before {
+  top: 90%;
+  left: 55%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.check:after {
+  border-color: rgba(35, 82, 124, 0);
+  border-top-color: #23527c;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.check:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-top-color: #c2e1f5;
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.col-md-1.btn.btn-success {
+  margin-left: 13px;
+  margin-top: 2px;
+}
+
+button.col-md-1.btn.btn-success.pencil {
+  float: right;
+  margin-left: 0px;
+  margin-right: 9px;
+}
+
+#blocProduction .col-md-5.musiciens.colright{
+  width: 35.367%;
+}
+
+#Titre {
+  margin-left: -12px;
+}
+
+
+/*.col-md-1.musiciens.Genre.ng-binding{
+  margin-left: 5px;
+}*/
+
+#Annee {
+  /*border-left: 2px solid;*/
+}
+
+span.glyphicon.glyphicon-step-forward,
+span.glyphicon.glyphicon-fast-forward,
+span.glyphicon.glyphicon-fast-backward,
+span.glyphicon.glyphicon-step-backward {
+  padding-top: 3px;
+}
+
+button.col-md-1.btnplusfiche.btn.btn-success.search {
+  float: right;
+  top: 54px;
+  padding-top: 5px;
+}
+
+a.lienWebJaquette {
+  font-size: 23px;
+  left: 168px;
+  position: absolute;
+  top: 5px;
+}
+a.lienWebJaquette:hover{
+  text-decoration: none;
+}
+
+.save.btn.btn-success {
+  position: absolute;
+  right: 15px;
+  top: 99px;
+}
+
+.col-md-1.musiciens.Type {
+  width: 68px;
+}
+
+.col-md-1.musiciens.Annee {
+  width: 69px;
+}
+
+.col-md-2.musiciens.Genre {
+  width: 138px;
+}
+
+.col-md-3.musiciens.Titre,
+.col-md-3.musiciens.Artiste {
+  width: 23%;
+}
+
+.colgauche .haut {
+  margin-bottom: 0px;
+  border-bottom: 1px solid #c3c3c3;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,1e5799+4,a1c0f4+5,a1c0f4+35,1e5799+36,1e5799+55,a1c0f4+56,a1c0f4+75,1e5799+76,1e5799+93,ffffff+94&0.6+0,0.6+5,0.6+6,0.6+17,0.6+44,0.6+68,0.6+90 */
+  background: -moz-linear-gradient(left, rgba(136, 173, 234, 0.6) 0%, rgba(136, 173, 234, 0.6) 4%, rgba(156, 186, 237, 0.6) 4%, rgba(156, 186, 237, 0.6) 35%, rgba(136, 173, 234, 0.6) 35%, rgba(136, 173, 234, 0.6) 55%, rgba(136, 173, 234, 0.6) 55%, rgba(156, 186, 237, 0.6) 74%, rgba(136, 173, 234, 0.6) 74%, rgba(136, 173, 234, 0.6) 92%, rgba(156, 186, 237, 0.6) 92%, rgba(156, 186, 237, 0.6) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(136, 173, 234, 0.6) 0%, rgba(136, 173, 234, 0.6) 4%, rgba(156, 186, 237, 0.6) 4%, rgba(156, 186, 237, 0.6) 35%, rgba(136, 173, 234, 0.6) 35%, rgba(136, 173, 234, 0.6) 55%, rgba(136, 173, 234, 0.6) 55%, rgba(156, 186, 237, 0.6) 92%, rgba(136, 173, 234, 0.6) 74%, rgba(136, 173, 234, 0.6) 90%, rgba(156, 186, 237, 0.6) 92%, rgba(156, 186, 237, 0.6) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(136, 173, 234, 0.6) 0%, rgba(136, 173, 234, 0.6) 4%, rgba(156, 186, 237, 0.6) 4%, rgba(156, 186, 237, 0.6) 35%, rgba(136, 173, 234, 0.6) 35%, rgba(136, 173, 234, 0.6) 55%, rgba(156, 186, 237, 0.6) 55%, rgba(156, 186, 237, 0.6) 74%, rgba(136, 173, 234, 0.6) 74%, rgba(136, 173, 234, 0.6) 92%, rgba(156, 186, 237, 0.6) 92%, rgba(156, 186, 237, 0.6) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#991e5799', endColorstr='#99ffffff', GradientType=1);
+  /* IE6-9 */
+}
+
+.bodytitres {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfe7fa+98,008df9+100&0.48+98,1+100 */
+  background: -moz-linear-gradient(top, rgba(207, 231, 250, 0.48) 98%, rgba(0, 141, 249, 1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(207, 231, 250, 0.48) 98%, rgba(0, 141, 249, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(207, 231, 250, 0.48) 98%, rgba(0, 141, 249, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7acfe7fa', endColorstr='#008df9', GradientType=0);
+  /* IE6-9 */
+}
+.corps {
+    height: 100%;
+  }
+
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (max-width: 980px) {
+  .dumeme li {
+    min-height: 65px;
+  }
+  .corps {
+    height: 83%;
+  }
+  .jumbotron.col-md-8.colgauche {
+    max-height: 100%;
+    min-height: 100%;
+  }
+  .modal-lg {
+    width: 100%!important;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .modal-lg {
+    width: 80%!important;
+  }
+}
+
+@media screen and (max-width: 1163px) {
+  .modal-lg {
+    width: 90%!important;
+  }
+}
+@media screen and (max-width: 1037px) {
+  .modal-lg {
+    width: 100%!important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .container {
+    max-width: 100%;
+  }
+  .corps {
+    height: 83%;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  .dumeme li {
+    min-height: 65px;
+  }
+  .colgauche .container .row > .col-md-1.plus,
+  .colgauche .container .row > .col-md-1.moins {
+    width: 4.2%;
+  }
+  .jumbotron .btn {
+    width: 9.4%;
+  }
+  .col-md-9 {
+    width: 100%;
+  }
+  li.emplacement {
+    margin-left: 0px;
+  }
+  .jaquette {
+    height: 285px;
+    width: 285px;
+  }
+  .blocfiche {
+    margin-top: 0px;
+  }
+  a.lienWebJaquette {
+    left: 300px;
+    top: 185px;
+  }
+  .colform {
+    max-height: 100%;
+  }
+  .modal-lg {
+    width: 100%!important;
+  }
+}
+
+body.modal-open {
+  padding-right: 0px!important;
+}
+
+.btn-success {
+  background-color: #3275ae;
+  border-color: #CDCDCD;
+  color: #fff;
+}
+
+.btn-success:focus,
+.btn-success.focus {
+  background-color: #23527C;
+  border-color: #3a009e;
+  color: #fff;
+}
+
+.btn-success:active:hover,
+.btn-success.active:hover,
+.open > .dropdown-toggle.btn-success:hover,
+.btn-success:active:focus,
+.btn-success.active:focus,
+.open > .dropdown-toggle.btn-success:focus,
+.btn-success.focus:active,
+.btn-success.active.focus,
+.open > .dropdown-toggle.btn-success.focus,
+.btn-success:hover,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled.focus,
+.btn-success.focus[disabled],
+fieldset[disabled] .btn-success.focus .btn-success:hover {
+  background-color: #23527C;
+  border-color: #67a1d4;
+  color: #fff;
+}
+
+.btn.upload,
+input.upload {
+  position: absolute;
+}
+
+input.upload {
+  left: 200px;
+}
+
+.btn.upload {
+  top: 30px;
+  left: 165px;
+}
+
+.modal-lg {
+  width: 70%;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-body .dumemeentete {
+  width: 93%;
+}
+label.form-control-label.ng-binding.recherche{
+  word-spacing: 3px;
+  font-size: 16px;
+}
+
+#img-spinner {
+    width: 65px;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+}
+.spinner{
+  width: 65px;
+  height:65px;
+  background-color: #eee;
+  border-radius: 50%;
+  position: relative;
+  margin:15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.spinner:after,
+.spinner:before{
+  content: '';
+  display: block;
+  width: 65px;
+  height:65px;
+  border-radius: 50%;
+}
+.spinner:after{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border:4px solid transparent;
+  border-top-color: #3275AE;
+  border-bottom-color: #3275AE;
+  animation: spinny 1s linear infinite;
+}
+@keyframes spinny{
+0% {transform:rotate(0deg);scale(1) ;}
+50% {transform:rotate(45deg);scale(1.2) ;}
+100% {transform:rotate(360deg);scale(1) ;}
+}
+
+#blocTitres{
+  min-width: 100%;
+}
+
+#modal-body-search .dumeme{
+  height: 580px;
+  max-height: 580px;
+}

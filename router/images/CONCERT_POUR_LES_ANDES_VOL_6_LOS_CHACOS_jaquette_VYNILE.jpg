@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" /> -->
+  <link rel="stylesheet" href="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/bootstrap.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/main.css">
+  <!-- endbuild -->
+</head>
+
+<body ng-app="mediathequeApp" class="ng-scope">
+  <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+  <div class="header">
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/">MEDIATHEQUE</a>
+        </div>
+        <div class="collapse navbar-collapse" id="js-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#/Home.html">Home</a></li>
+            <li><a ng-href="#/" href="#/">Contact</a>
+              <ul class="sousmenu">
+                <li><a ng-href="https://www.facebook.com/pierre.lange.96/about?ref=update_info_button" target="_blank" href="https://www.facebook.com/pierre.lange.96/about?ref=update_info_button">Contactes moi sur facebook</a></li>
+              </ul>
+            </li>
+            <li><a ng-href="#/" href="#/">?</a>
+              <ul class="sousmenu">
+                <li><span>Application Mediathèque V 1.0</span></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="corps container ng-scope" ng-controller="mainCtrl">
+    <div class="row">
+      <div class="col-md-4 colform">
+        <div class="container sidebar">
+          <div class="row sidebar">
+            <div class="col-md-3">
+              <div class="jaquette"><img class="jaquette" alt="" src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE.jpg"></div>
+            </div>
+            <a ng-click="copyToClipboard()" class="lienWebJaquette glyphicon glyphicon-picture" target="_blank" href="https://www.google.fr/search?q=%22CONCERT+POUR+LES+ANDES+VOL+6%22+%22LOS+CHACOS%22+jaquette+VYNILE&amp;biw=1920&amp;bih=911&amp;espv=2&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjJoJvJzKzNAhWJiRoKHZ2lAPgQ_AUIBygC"></a>
+            <ul class="ulBoutonsGestFiche">
+              <li>
+                <button class="col-md-1 btn-lg btn-success" ng-click="ajouterFiche(dataFicheEnCours)"><span class="glyphicon glyphicon-plus"></span></button>
+              </li>
+              <li>
+                <button class="col-md-1 btn-lg btn-success pencil" ng-click="modifierFiche(dataFicheEnCours,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+              </li>
+              <li>
+                <button class="col-md-1 btn-lg btn-success search" ng-click="chercherFiche()"><span class="glyphicon glyphicon-search"></span></button>
+              </li>
+              <li>
+                <button class="col-md-1 btn-lg btn-success trash" ng-click="supprimerFiches()"><span class="glyphicon glyphicon-trash"></span></button>
+              </li>
+              <li>
+                <button class="col-md-1 btn-lg btn-success save" ng-click="saveFiches()"><span class="glyphicon glyphicon-save"></span></button>
+              </li>
+            </ul>
+            <ul class="col-md-8 blocfiche">
+              <li class="cssfiche">
+                <h3 class="ng-binding">Type : VYNILE</h3>
+              </li>
+              <li class="cssfiche">
+                <h3 class="ng-binding">Année : 1974</h3>
+              </li>
+              <li class="cssfiche cssgenre">
+                <h3 class="ng-binding">Genre : FLUTE&nbsp;ANDINE</h3>
+              </li>
+              <li class="cssfiche">
+                <h3>&nbsp;</h3>
+              </li>
+              <li class="cssfiche">
+                <h3>&nbsp;</h3>
+              </li>
+              <li class="emplacement">
+                <h3 class="ng-binding">Titre : CONCERT POUR LES ANDES VOL 6</h3>
+              </li>
+              <li class="emplacement">
+                <h3 class="ng-binding">Artiste : LOS CHACOS</h3>
+              </li>
+              <li class="emplacement">
+                <h3 class="ng-binding">Emplacement : ARMOIRE BAS DROITE</h3>
+              </li>
+            </ul>
+            <div>
+              <div class="col-xs-8 btncircufiche">
+                <button id="btntop" class="btn btn-success" ng-click="circuFiche('fastback')" ng-disabled="!affichageRulesCircuFiche('fastback')"><span class="glyphicon glyphicon-fast-backward"></span></button>
+                <button id="btnleft" class="btn btn-success" ng-click="circuFiche('back')" ng-disabled="!affichageRulesCircuFiche('back')"><span class="glyphicon glyphicon-step-backward"></span></button>
+                <button id="btnright" class="btn btn-success" ng-click="circuFiche('next')" ng-disabled="!affichageRulesCircuFiche('next')"><span class="glyphicon glyphicon-step-forward"></span></button>
+                <button id="btnbottom" class="btn btn-success" ng-click="circuFiche('fastnext')" ng-disabled="!affichageRulesCircuFiche('fastnext')"><span class="glyphicon glyphicon-fast-forward"></span></button>
+              </div>
+            </div>
+          </div>
+          <div class="jumbotron col-md-12 sidebar">
+            <h3>Musiciens</h3>
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 265px;"><div id="blocMusicien" class="haut sidebar" style="overflow: hidden; width: auto; height: 265px;">
+              <ul class="container sidebar bas">
+                <li class="row headermusiciens">
+                  <span class="col-md-6 musiciens head">Musicien</span>
+                  <span class="col-md-5 musiciens colright head">Instrument</span>
+                  <button class="col-xs-1 btn btn-success" ng-click="ajouterMusicienPop()"><span class="glyphicon glyphicon-plus"></span></button>
+                </li>
+                <!-- ngRepeat: musicien in dataFicheEnCours.listeDesMusiciens --><li class="row bodymusiciens ng-scope" ng-repeat="musicien in dataFicheEnCours.listeDesMusiciens">
+                  <div class="col-md-6 musiciens ng-binding">JEAN BESSALEL</div>
+                  <div class="col-md-5 musiciens colright ng-binding">BASSE</div>
+                  <button class="col-xs-1 btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesMusiciens,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+                  <button class="col-xs-1 btn btn-success pencil" ng-click="modifierMusicien(dataFicheEnCours.listeDesMusiciens,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+                </li><!-- end ngRepeat: musicien in dataFicheEnCours.listeDesMusiciens --><li class="row bodymusiciens ng-scope" ng-repeat="musicien in dataFicheEnCours.listeDesMusiciens">
+                  <div class="col-md-6 musiciens ng-binding">J J CAYRE</div>
+                  <div class="col-md-5 musiciens colright ng-binding">QUENA</div>
+                  <button class="col-xs-1 btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesMusiciens,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+                  <button class="col-xs-1 btn btn-success pencil" ng-click="modifierMusicien(dataFicheEnCours.listeDesMusiciens,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+                </li><!-- end ngRepeat: musicien in dataFicheEnCours.listeDesMusiciens --><li class="row bodymusiciens ng-scope" ng-repeat="musicien in dataFicheEnCours.listeDesMusiciens">
+                  <div class="col-md-6 musiciens ng-binding">J M CAYRE</div>
+                  <div class="col-md-5 musiciens colright ng-binding">QUENA</div>
+                  <button class="col-xs-1 btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesMusiciens,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+                  <button class="col-xs-1 btn btn-success pencil" ng-click="modifierMusicien(dataFicheEnCours.listeDesMusiciens,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+                </li><!-- end ngRepeat: musicien in dataFicheEnCours.listeDesMusiciens --><li class="row bodymusiciens ng-scope" ng-repeat="musicien in dataFicheEnCours.listeDesMusiciens">
+                  <div class="col-md-6 musiciens ng-binding">DANIEL DARMEZIN</div>
+                  <div class="col-md-5 musiciens colright ng-binding">CHARANGO</div>
+                  <button class="col-xs-1 btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesMusiciens,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+                  <button class="col-xs-1 btn btn-success pencil" ng-click="modifierMusicien(dataFicheEnCours.listeDesMusiciens,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+                </li><!-- end ngRepeat: musicien in dataFicheEnCours.listeDesMusiciens -->
+              </ul>
+            </div><div class="slimScrollBar" style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 272px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+            <div class="haut sidebar bas">
+              <h3>Production</h3>
+              <ul id="blocProduction" class="container sidebar bas">
+                <li class="row headermusiciens">
+                  <span class="col-md-6 musiciens head">Prénom</span>
+                  <span class="col-md-5 musiciens colright head">Nom</span>
+                  <button class="col-md-1 btn btn-success" ng-click="ajouterProductionPop()"><span class="glyphicon glyphicon-plus"></span></button>
+                </li>
+                <!-- ngRepeat: producteur in dataFicheEnCours.listeDesProductions -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron col-md-8 colgauche">
+        <h3><span class="titretitres">Titres</span><span class="numfiche ng-binding">Fiche n°690&nbsp;/&nbsp;1754</span></h3>
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 380px;"><div id="blocTitres" class="haut" style="overflow: hidden; width: auto; height: 380px;">
+          <ul class="container blocTitre">
+            <li class="row rowTitre">
+              <span class="col-md-1 titres head">°</span>
+              <span class="col-md-4 titres head">Titre</span>
+              <span class="col-md-2 titres head">Auteur</span>
+              <span class="col-md-2 titres head">Compositeur</span>
+              <span class="col-md-2 titres colright head">Interprète</span>
+              <button class="col-md-1 plus btn btn-success" ng-click="ajouterTitrePop()"><span class="glyphicon glyphicon-plus"></span></button>
+            </li>
+            <!-- ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">1</div>
+              <div class="col-md-4 titres ng-binding">DANZA DE LA ZORRA</div>
+              <div class="col-md-2 titres ng-binding">JEAN JACQUES CAYRE</div>
+              <div class="col-md-2 titres ng-binding">JEAN JACQUES CAYRE</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">2</div>
+              <div class="col-md-4 titres ng-binding">PENA</div>
+              <div class="col-md-2 titres ng-binding">JEAN BESSALEL</div>
+              <div class="col-md-2 titres ng-binding">MARIANO MELGAR</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">3</div>
+              <div class="col-md-4 titres ng-binding">CATAVIENTO</div>
+              <div class="col-md-2 titres ng-binding">JEAN BESSALEL</div>
+              <div class="col-md-2 titres ng-binding">JEAN BESSALEL</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">4</div>
+              <div class="col-md-4 titres ng-binding">DANZANDANTE</div>
+              <div class="col-md-2 titres ng-binding">JEAN BESSALEL</div>
+              <div class="col-md-2 titres ng-binding">JEAN BESSALEL</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">5</div>
+              <div class="col-md-4 titres ng-binding">FLOR PEREGRINA</div>
+              <div class="col-md-2 titres ng-binding">JEAN BESSALEL</div>
+              <div class="col-md-2 titres ng-binding">JEAN MICHEL CAYRE</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">6</div>
+              <div class="col-md-4 titres ng-binding">RECUERDO DE JARA</div>
+              <div class="col-md-2 titres ng-binding">JEAN JACQUES CAYRE</div>
+              <div class="col-md-2 titres ng-binding">JEAN JACQUES CAYRE</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">7</div>
+              <div class="col-md-4 titres ng-binding">AYRES</div>
+              <div class="col-md-2 titres ng-binding">DANIEL DARMEZIN</div>
+              <div class="col-md-2 titres ng-binding">DANIEL DARMEZIN</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">8</div>
+              <div class="col-md-4 titres ng-binding">CARNAVALITO DE QUITO</div>
+              <div class="col-md-2 titres ng-binding">DANIEL DARMEZIN</div>
+              <div class="col-md-2 titres ng-binding">DANIEL DARMEZIN</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">9</div>
+              <div class="col-md-4 titres ng-binding">AUSCENCIA</div>
+              <div class="col-md-2 titres ng-binding">DANIEL DARMEZIN</div>
+              <div class="col-md-2 titres ng-binding">DANIEL DARMEZIN</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">10</div>
+              <div class="col-md-4 titres ng-binding">BALADA MAS NORTICA</div>
+              <div class="col-md-2 titres ng-binding">DANIEL DARMEZIN</div>
+              <div class="col-md-2 titres ng-binding">DANIEL DARMEZIN</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">11</div>
+              <div class="col-md-4 titres ng-binding">EL CABRITO</div>
+              <div class="col-md-2 titres ng-binding">DANIEL DARMEZIN</div>
+              <div class="col-md-2 titres ng-binding">DANIEL DARMEZIN</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">12</div>
+              <div class="col-md-4 titres ng-binding">MASCOS</div>
+              <div class="col-md-2 titres ng-binding">JEAN MICHEL CAYRE</div>
+              <div class="col-md-2 titres ng-binding">JEAN MICHEL CAYRE</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">13</div>
+              <div class="col-md-4 titres ng-binding">MASCOS</div>
+              <div class="col-md-2 titres ng-binding">JEAN MICHEL CAYRE</div>
+              <div class="col-md-2 titres ng-binding">JEAN MICHEL CAYRE</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres --><li class="row bodytitres ng-scope" ng-repeat="titre in dataFicheEnCours.listeDesTitres">
+              <div class="col-md-1 titres ng-binding">14</div>
+              <div class="col-md-4 titres ng-binding">BOSQUES MOJADOS</div>
+              <div class="col-md-2 titres ng-binding">JEAN JACQUES CAYRE</div>
+              <div class="col-md-2 titres ng-binding">JEAN JACQUES CAYRE</div>
+              <div class="col-md-2 titres colright ng-binding">LOS CHACOS</div>
+              <button class="col-md-1 moins btn btn-success" ng-click="supprimeDeLaListe(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-minus"></span></button>
+              <button class="col-md-1 plus btn btn-success pencil" ng-click="modifierTitre(dataFicheEnCours.listeDesTitres,$index)"><span class="glyphicon glyphicon-pencil"></span></button>
+            </li><!-- end ngRepeat: titre in dataFicheEnCours.listeDesTitres -->
+          </ul>
+        </div><div class="slimScrollBar" style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 331.954px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+        <!--<div class="trisbas">-->
+        <div class="container bas tresbas">
+          <dir class="row">
+            <ul class="container dumemeentete">
+              <li class="headertris">
+                <span class="col-md-1 musiciens head" id="Type"><a ng-click="changeChevron('Type')">Type</a></span>
+                <span class="col-md-3 musiciens head" id="Artiste"><a ng-click="changeChevron('Artiste')">Artiste</a></span>
+                <span class="col-md-3 musiciens head" id="Titre"><a ng-click="changeChevron('Titre')">Titre</a></span>
+                <span class="col-md-1 musiciens head" id="Annee"><a ng-click="changeChevron('Annee')">Annee</a></span>
+                <span class="col-md-2 musiciens head" id="Genre"><a ng-click="changeChevron('Genre')">Genre</a></span>
+                <span class="col-md-2 musiciens colright head check" id="Emplacement"><a ng-click="changeChevron('Emplacement')">Emplacement</a></span>
+              </li>
+            </ul>
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 284px;"><ul id="blocDuMeme" class="dumeme" style="overflow: hidden; width: auto; height: 284px;">
+              <!-- ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText0">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText0">LA CHIFONIE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LA CHIFONIE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText0">AU DESSUS DU PONT
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">AU DESSUS DU PONT</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1978</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText0">FOLK
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FOLK</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText0">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText1">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText1">LOS INCAS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS INCAS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText1">PEROU
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">PEROU</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1966</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText1">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText1">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText2">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText2">LOS INCAS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS INCAS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText2">71
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">71</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1971</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText2">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText2">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText3">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText3">LOS INCAS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS INCAS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText3">CHANTS D AMERIQUE LA...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">CHANTS D AMERIQUE LATINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1965</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText3">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText3">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText4">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText4">LOS INCAS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS INCAS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText4">INEDITS LP
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">INEDITS LP</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1973</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText4">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText4">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText5">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText5">LOS INCAS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS INCAS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText5">SUCCES ORIGINAUX 
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">SUCCES ORIGINAUX </li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1970</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText5">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText5">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText6">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText6">LOS CALCHALKIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CALCHALKIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText6">FLUTES INDIENNES 
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">FLUTES INDIENNES </li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1969</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText6">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText6">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText7">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText7">LOS CALCHALKIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CALCHALKIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText7">VOLUME UNO
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VOLUME UNO</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1969</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText7">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText7">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText8">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText8">LOS CALCHALKIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CALCHALKIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText8">LA GUITARE INDIENNE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LA GUITARE INDIENNE</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1970</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText8">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText8">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText9">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText9">LOS CALCHALKIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CALCHALKIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText9">LES FLUTES INDIENNES...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LES FLUTES INDIENNES VOL 4</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1971</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText9">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText9">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText10">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText10">LOS CALCHALKIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CALCHALKIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText10">FLUTES INDIENNES VOL 5
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">FLUTES INDIENNES VOL 5</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1972</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText10">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText10">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText11">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText11">LOS CALCHALKIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CALCHALKIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText11">LES FLUTES INDIENNES...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LES FLUTES INDIENNES VOL 6</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1973</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText11">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText11">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText12">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText12">LOS CALCHALKIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CALCHALKIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText12">LES FLUTES INDIENNES...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LES FLUTES INDIENNES VOL 7</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1975</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText12">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText12">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText13">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText13">LOS CALCHALKIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CALCHALKIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText13">LE CHANT DES POETES ...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LE CHANT DES POETES REVOLTES</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1974</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText13">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText13">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText14">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText14">LOS CALCHALKIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CALCHALKIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText14">LA DIABLADA
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LA DIABLADA</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1979</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText14">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText14">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText15">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText15">LOS CALCHALKIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CALCHALKIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText15">LA MISA CRIOLA
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LA MISA CRIOLA</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1975</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText15">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText15">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText16">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText16">LOS CHACOS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CHACOS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText16">LA FLUTE MAGIQUE 
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LA FLUTE MAGIQUE </li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1970</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText16">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText16">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText17">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText17">LOS CHACOS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CHACOS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText17">LA FLUTE MAGIQUE VOL 2
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LA FLUTE MAGIQUE VOL 2</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1971</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText17">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText17">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText18">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText18">LOS CHACOS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CHACOS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText18">LA FLUTE DE PAN VOL3
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LA FLUTE DE PAN VOL3</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1972</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText18">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText18">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText19">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText19">LOS CHACOS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CHACOS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText19">DES ANDES A J S BACH
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">DES ANDES A J S BACH</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1973</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText19">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText19">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText20">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText20">LOS CHACOS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CHACOS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText20">VOLUME CINCO
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VOLUME CINCO</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1973</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText20">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText20">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText21">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText21">LOS CHACOS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CHACOS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText21">CONCERT POUR LES AND...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">CONCERT POUR LES ANDES VOL 6</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1974</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText21">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText21">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText22">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText22">FACIO SANTILLAN
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">FACIO SANTILLAN</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText22">SORTILEGE DE LA FLUT...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">SORTILEGE DE LA FLUTE DES ANDE</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1970</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText22">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText22">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText23">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText23">FACIO SANTILLAN
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">FACIO SANTILLAN</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText23">SORTILEGE DE LA FLUT...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">SORTILEGE DE LA FLUTE DES ANDE</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1972</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText23">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText23">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText24">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText24">FACIO SANTILLAN
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">FACIO SANTILLAN</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText24">SORTILEGE DE LA FLUT...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">SORTILEGE DE LA FLUTE DES ANDE</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1971</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText24">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText24">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText25">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText25">ROBERTO GUARANI
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">ROBERTO GUARANI</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText25">HARPE PARAGUAYENNE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">HARPE PARAGUAYENNE</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1969</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText25">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText25">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText26">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText26">CHILI
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">CHILI</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText26">CANTO A LO HUMANO
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">CANTO A LO HUMANO</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1973</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText26">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText26">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText27">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText27">QUILAPAYUN
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">QUILAPAYUN</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText27">LES FLUTES CHILIENNES
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LES FLUTES CHILIENNES</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1973</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText27">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText27">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText28">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText28">QUILAPAYUN
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">QUILAPAYUN</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText28">SANTA MARIA DE IQUIQUE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">SANTA MARIA DE IQUIQUE</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1975</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText28">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText28">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText29">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText29">ENSEMBLE ACHALAY 
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">ENSEMBLE ACHALAY </li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText29">MUSIQUE DES ANDES N°5
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">MUSIQUE DES ANDES N°5</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1975</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText29">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText29">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText30">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText30">QUILAPAYUN
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">QUILAPAYUN</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText30">EL PUEBLO UNIDO JAMA...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">EL PUEBLO UNIDO JAMAS SERA VEN</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1975</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText30">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText30">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText31">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText31">LOS QUETZALES
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS QUETZALES</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText31">VAMOS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VAMOS</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1976</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText31">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText31">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText32">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText32">EMILIO ARTEAGA
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">EMILIO ARTEAGA</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText32">LE CHARANGO
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LE CHARANGO</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1972</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText32">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText32">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText33">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText33">LOS GUARANIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS GUARANIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText33">LA FETE DES FLEURS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LA FETE DES FLEURS</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1974</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText33">SUD AMERICAIN
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">SUD AMERICAIN</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText33">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText34">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText34">LOS JAIRAS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS JAIRAS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText34">LA FLUTE DES ANDES
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LA FLUTE DES ANDES</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1975</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText34">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText34">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText35">CD
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">CD</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText35">E.HARRIS/M.MAUDAUR/J...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">E.HARRIS/M.MAUDAUR/J.COLLINS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText35">COMPIL CHANTEUSES CO...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">COMPIL CHANTEUSES COUNTRY</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">2004</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText35">COUNTRY
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">COUNTRY</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText35">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText36">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText36">LOS CALCHALKIS
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CALCHALKIS</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText36">FLUTES HARPES ET GUI...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">FLUTES HARPES ET GUITARES INDI</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1970</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText36">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText36">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search --><li class="dumemetris hoverdumemetris ng-scope" ng-repeat="fiche in datas | filter:search" ng-click="ficheEnCours({data : datas.indexOf(fiche)})">
+                <div class="colleft col-md-1 musiciens Type ng-binding" id="myTypeText37">VYNILE
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">VYNILE</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Artiste ng-binding" id="myArtisteText37">LOS CONDORES
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">LOS CONDORES</li>
+                  </ul>
+                </div>
+                <div class="col-md-3 musiciens Titre ng-binding" id="myTitreText37">EL CONDOR PASADES CO...
+                  <ul class="noVisible popleft">
+                    <li class="ng-binding">EL CONDOR PASADES CONDORES</li>
+                  </ul>
+                </div>
+                <div class="col-md-1 musiciens Genre ng-binding">1969</div>
+                <div class="col-md-2 musiciens ng-binding" id="myGenreText37">FLUTE ANDINE
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">FLUTE ANDINE</li>
+                  </ul>
+                </div>
+                <div class="col-md-2 musiciens Emplacement colright ng-binding" id="myEmplacementText37">ARMOIRE BAS...
+                  <ul class="noVisible popright">
+                    <li class="ng-binding">ARMOIRE BAS DROITE</li>
+                  </ul>
+                </div>
+              </li><!-- end ngRepeat: fiche in datas | filter:search -->
+            </ul><div class="slimScrollBar" style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 284px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51) none repeat scroll 0% 0%; opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+        </dir></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer"></div>
+  <script type="text/ng-template" id="popinOuiNon.html">
+    <div class="modal-header">
+      <h3 class="modal-title" ng-cloak>{{titrePopin}}</h3>
+      <div id="spinner" ng-show="loading">
+        <!-- <img id="img-spinner" src="images/spin.gif" /> -->
+        <h1 class="spinner spinner-1"></h1>
+      </div>
+      
+    </div>
+    <div class="modal-body">
+    </div>
+    <div class="modal-footer">
+      <button id="btnOuiNon" class="btn btn-primary" type="button" ng-keypress="($event.which === 13)?ok():0" ng-click="ok()">Oui</button>
+      <button class="btn btn-warning" type="button" ng-click="cancel()">Non</button>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="popinOuiNonTplSave.html">
+    <div class="modal-header">
+      <h3 class="modal-title" ng-cloak>{{titrePopin}}</h3>
+      <div id="spinner" ng-show="loading">
+        <!-- <img id="img-spinner" src="images/spin.gif" /> -->
+        <h1 class="spinner spinner-1"></h1>
+      </div>
+      
+    </div>
+    <div class="modal-body">
+    </div>
+    <div class="modal-footer">
+      <button id="btnOuiNon" class="btn btn-primary" type="button" ng-keypress="($event.which === 13)?ok():0" ng-click="okSave()">Oui</button>
+      <button class="btn btn-warning" type="button" ng-click="cancel()">Non</button>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="prompt.html">
+    <div class="modal-header">
+      <h3 class="modal-title" ng-cloak>{{titrePopin}}</h3> 
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="recipient-name" class="form-control-label recherche" ng-bind-html="titreLabel"></label>
+          <input type="text" focus="true" class="form-control" id="recipient-name" ng-model="searchTerm" autocomplete="on" autocorrect="on" ng-keypress="($event.which === 13)?okPrompt(searchTerm):0">
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" type="button" ng-keypress="($event.which === 13)?okPrompt(searchTerm):0" ng-click="okPrompt(searchTerm)">valider</button>
+      <button class="btn btn-warning" type="button" ng-click="cancel()">Non</button>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="search.html">
+    <div class="corps container">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title">{{titrePopin}}</h3>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <h5 ng-cloak>Voici le résutat de la recherche pour : {{searchFilterModal}}</h5>        
+        <ul class="container dumemeentete">
+          <li class="headertris ">
+            <span class="col-md-1 musiciens head" id="TypeM"><a ng-click="changeChevronM('TypeM') ">Type</a></span>
+            <span class="col-md-3 musiciens head" id="ArtisteM"><a ng-click="changeChevronM('ArtisteM') ">Artiste</a></span>
+            <span class="col-md-3 musiciens head" id="TitreM"><a ng-click="changeChevronM('TitreM') ">Titre</a></span>
+            <span class="col-md-1 musiciens head" id="AnneeM"><a ng-click="changeChevronM('AnneeM') ">Annee</a></span>
+            <span class="col-md-2 musiciens head" id="GenreM"><a ng-click="changeChevronM('GenreM') ">Genre</a></span>
+            <span class="col-md-2 musiciens head" id="EmplacementM"><a ng-click="changeChevronM('EmplacementM') ">Emplacement</a></span>
+          </li>
+        </ul>
+        <ul class="dumeme ">
+          <!-- | filter:search -->
+          <li class="dumemetris hoverdumemetris " ng-repeat="fiche in filtered = (searchFicheArrayModal | filter: searchFilterModal : searchFilterModalCond)">
+
+            <a href="# " data-dismiss="modal " data-ng-click="ok(searchFicheArrayModal.indexOf(fiche)+1) ">
+              <div class="colleft col-md-1 musiciens Type" id="myTypeTextM{{$index}}" ng-cloak>{{fiche.Type || "- "}}</div>
+              <div class="col-md-3 musiciens Artiste" id="myArtisteTextM{{$index}}" ng-cloak>{{fiche.Artiste || "- "}}</div>
+              <div class="col-md-3 musiciens Titre" id="myTitreTextM{{$index}}" ng-cloak>{{fiche.Titre || "- "}}</div>
+              <div class="col-md-1 musiciens Genre" ng-cloak>{{fiche.Annee || "- "}}</div>
+              <div class="col-md-2 musiciens" id="myGenreTextM{{$index}}" ng-cloak>{{fiche.Genre || "- "}}</div>
+              <div class="col-md-2 musiciens Emplacement colright" id="myEmplacementTextM{{$index}}" ng-cloak>{{fiche.Emplacement || "- "}}</div>
+
+            </a>
+          </li>
+        </ul>
+        <h5><span ng-if="filtered.length > 0">{{filtered.length}}</span> <ng-pluralize count="filtered.length" offset=1 when="{'0': 'Pas de fiche trouvée','1': 'fiche trouvée', 'other': 'fiches trouvées'}"></ng-pluralize></h5>     
+      </div>
+      
+      <div class="modal-footer ">  
+                
+        <button class="btn btn-warning " type="button " ng-click="cancel() ">Close</button>
+      </div>
+    </div>
+  </script>
+
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/angular.js"></script>
+  
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/jquery-1.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/angular-animate.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/angular-resource.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/angular-sanitize.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/angular-aria.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/angular-messages.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/angular-spinners.js"></script>
+  
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/ui-bootstrap-tpls-1.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/bootstrap.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/jquery.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/lodash.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/app.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/ficheServiceResource.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/ficheServiceRules.js"></script>
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/ficheServicePopin.js"></script>
+   
+  <!--<script src="scripts/require.min.js " data-main="scripts/controllers/main.js "></script>-->
+  <!--<script src="scripts/node.js "></script> -->
+  <!-- <script src="scripts/services.js "></script> -->
+  <script src="CONCERT_POUR_LES_ANDES_VOL_6_LOS_CHACOS_jaquette_VYNILE_fichiers/main.js"></script>  
+
+  <!-- endbuild -->
+
+
+</body></html>
