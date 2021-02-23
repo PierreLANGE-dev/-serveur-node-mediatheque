@@ -189,6 +189,12 @@
       "nameLangage": "Node.js",
       "styleBar": "Nodejs",
       "pourcentage": "65"
+    },
+    {
+      "imgBar": "/DDC/java.png",
+      "nameLangage": "Java SE",
+      "styleBar": "Java",
+      "pourcentage": "40"
     }
   ]
 }
