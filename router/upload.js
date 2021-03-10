@@ -19,7 +19,7 @@ const upload = multer({
 
 router.post(
   "/upload",
-  upload.single("photo"),
+  upload.single("image"),
   (req, res) => {
     if (req.file) {
       res.send(req.file);

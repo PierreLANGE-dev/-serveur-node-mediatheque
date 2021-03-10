@@ -1,10 +1,10 @@
 ﻿var express = require("express"),
-    fichesRouter = require("./router/fiches"),
-    emplacementsRouter = require("./router/emplacements"),
-    cvRouter = require("./router/cv"),
-    uploadRouter = require("./router/upload"),
-    uploadRouterImgCV = require("./router/uploadImgCv"),
-    app = express();
+  fichesRouter = require("./router/fiches"),
+  emplacementsRouter = require("./router/emplacements"),
+  cvRouter = require("./router/cv"),
+  uploadRouter = require("./router/upload"),
+  uploadRouterImgCV = require("./router/uploadImgCv"),
+  app = express();
 
 var cors = require("cors");
 var bodyParser = require("body-parser");
@@ -22,10 +22,10 @@ app.use("/", uploadRouterImgCV);
 var port = process.env.PORT || 8083; // local tu définis ton port toi même // sur heroku
 
 app
-    .listen(port, function() {
-        process.stdout.write("\033c");
-        console.log("Server express ecoute sur le port %s", port);
-    })
-    .on("error", function(e) {
-        console.error(e.message);
-    });
+  .listen(port, function () {
+    process.stdout.write("\033c");
+    console.log("Server express ecoute sur le port %s", port);
+  })
+  .on("error", function (e) {
+    console.error(e.message);
+  });

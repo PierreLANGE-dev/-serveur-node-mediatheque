@@ -38,9 +38,9 @@ router.post(
   }
 );
 
-router.get("/imageprogbarres/:name", function (req, res, next) {
+router.get("/imgsProgBarres/:name", function (req, res, next) {
   var options = {
-    root: path.join(__dirname, "images"),
+    root: path.join(__dirname, "imgsProgBarres"),
     dotfiles: "deny",
     headers: {
       "x-timestamp": Date.now(),
