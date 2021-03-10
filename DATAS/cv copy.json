@@ -1,35 +1,22 @@
-{  
-"civilite" : {
+[
+  {
     "nom": "Pierre LANGE",
     "anneExperience": "11 années d'expérience",
     "situation": "Marié, 1 enfant",
     "permis": " ans / Permis B",
-    "adressePortfolio":
-      "https://cv-pierre-lange.herokuapp.com/Portfolio-pierre-lange.pdf"
-  }
-,
-
-  "adresse" : {
+    "adressePortfolio": "https://cv-pierre-lange.herokuapp.com/Portfolio-pierre-lange.pdf"
+  },
+  {
     "portable": "06 23 95 24 02",
     "email": "pierre.lange@gmail.com",
     "lieu": "10 rue Pablo Neruda 77200 Torcy"
-  }
-,
-
-  "poste" :{
-    "libelle": "Concepteur Développeur front-end"
-  }
-,
-
-  "domaineDeComp" : {
-    "libelleObjectif":
-      "Souhaite acquérir des compétences complémentaires sur : SYMFONY + REACT - SYMFONY + ANGULAR - REACT + NODE.JS",
-    "libelleDomaineDeComp":
-      "HTML 5 / CSS 3 - Bootstrap - JQuery - Angular JS - ANGULAR 2/9 - React JS - Nodes.js"
-  }
-,
-
-  "domaineDeCompDatas" : [
+  },
+  { "libelle": "Concepteur Développeur front-end" },
+  {
+    "libelleObjectif": "Souhaite acquérir des compétences complémentaires sur : SYMFONY + REACT - SYMFONY + ANGULAR - REACT + NODE.JS",
+    "libelleDomaineDeComp": "HTML 5 / CSS 3 - Bootstrap - JQuery - Angular JS - ANGULAR 2/9 - React JS - Nodes.js"
+  },
+  [
     {
       "dataLibelle": "Médiathèque (Angular JS)",
       "dataLink": "https://mediatheque-disquaire.herokuapp.com",
@@ -45,37 +32,30 @@
       "dataLink": "https://cv-pierre-lange.herokuapp.com",
       "dataText": "https://cv-pierre-lange.herokuapp.com"
     }
-  ]
-,
-
-  "formations" : [
+  ],
+  [
     {
       "annee": "09-2019",
       "titre": "Formation Concepteur Développeur Front End / APP Boulogne",
-      "text":
-        "Environnement technique : HTML-CSS Javacript jGuery React.js & Node.js"
+      "text": "Environnement technique : HTML-CSS Javacript jGuery React.js & Node.js"
     },
     {
       "annee": "2012",
       "titre": "Formation Java JEE / liferay (Ecole Aston - SQLI - ARCUEIL)",
-      "text":
-        "Environnement technique : Java JEE, protail Liferay 6.0, XSLT, XML, SPRING, SPRING MVC, JSF 2.0,Maven, Hibernete, Tomcat 6.0, Mysql, Eclipse, Git."
+      "text": "Environnement technique : Java JEE, protail Liferay 6.0, XSLT, XML, SPRING, SPRING MVC, JSF 2.0,Maven, Hibernete, Tomcat 6.0, Mysql, Eclipse, Git."
     },
     {
       "annee": "2008",
       "titre": "BTS développeur informatique spécialisation internet(AFPA - Rouen)",
-      "text":
-        "Environnement technique : VB / .net, SQL, MySQL, PHP,JEE, Applet, Servlet, ASP, UML."
+      "text": "Environnement technique : VB / .net, SQL, MySQL, PHP,JEE, Applet, Servlet, ASP, UML."
     },
     {
       "annee": "1995",
       "titre": "Brevet de technicien de maintenance en Micro-informatique",
       "text": "Contrat de qualification : window 3.1 / windows 95 / étude hardware"
     }
-  ]
-,
-
-  "experiences" : [
+  ],
+  [
     {
       "periode": "2013-2019",
       "titre": "Ingénieur Concepteur Développeur",
@@ -85,16 +65,17 @@
           "titre": "3 ans - Web Master",
           "commentaire": "Edf - publications journalières et hebdomadaires"
         },
-        { "titre": "", "commentaire": "BMW - maintenance des sites partnaires BMW" },
+        {
+          "titre": "",
+          "commentaire": "BMW - maintenance des sites partnaires BMW"
+        },
         {
           "titre": "2 ans - Développeur ANGULAR JS",
-          "commentaire":
-            "PACIFICA (Crédits Agricoles) - Projet NEWSÉSAME - passage de la gestion de l'assurance maison par terminal sous forme de site web"
+          "commentaire": "PACIFICA (Crédits Agricoles) - Projet NEWSÉSAME - passage de la gestion de l'assurance maison par terminal sous forme de site web"
         },
         {
           "titre": "1 ans - Thèmes LIFERAY (HTML - CSS - Java JEE)",
-          "commentaire":
-            "Thèmes LIFERAY - auchan - LVMH - AXA Maroc - filière d'EDF"
+          "commentaire": "Thèmes LIFERAY - auchan - LVMH - AXA Maroc - filière d'EDF"
         }
       ]
     },
@@ -105,23 +86,19 @@
       "text": [
         {
           "titre": "",
-          "commentaire":
-            "GROUPAMA / GGvie - Renfort en paramétrage CRM interne à la branche GGVie de Groupama"
+          "commentaire": "GROUPAMA / GGvie - Renfort en paramétrage CRM interne à la branche GGVie de Groupama"
         },
         {
           "titre": "",
-          "commentaire":
-            "Ring Tour / CRM - publications journalières et hebdomadères"
+          "commentaire": "Ring Tour / CRM - publications journalières et hebdomadères"
         },
         {
           "titre": "",
-          "commentaire":
-            "Ponticelli Frères SA - Feuille de temps et fiches de planning"
+          "commentaire": "Ponticelli Frères SA - Feuille de temps et fiches de planning"
         },
         {
           "titre": "",
-          "commentaire":
-            "Cadeau relation / CRM - Création d’un module servant à envoyer des cartes cadeau électronique par le biais d’un web service."
+          "commentaire": "Cadeau relation / CRM - Création d’un module servant à envoyer des cartes cadeau électronique par le biais d’un web service."
         }
       ]
     },
@@ -136,28 +113,103 @@
         },
         {
           "titre": "",
-          "commentaire":
-            "Sous Webdev, réalisation de diverses pages web de colloques"
+          "commentaire": "Sous Webdev, réalisation de diverses pages web de colloques"
         },
         {
           "titre": "",
-          "commentaire":
-            "Sous Windev en interne : Une application pour un concours photo lié à LDAP"
+          "commentaire": "Sous Windev en interne : Une application pour un concours photo lié à LDAP"
         }
       ]
     }
-  ]
-,
-  "hobbys" : [
+  ],
+  [
     {
       "libelle": "M.A.O / sculpture sur bois",
       "link": "https://pierrelange.wixsite.com/stone-co",
       "textLink": "https://pierrelange.wixsite.com/stone-co"
     }
+  ],
+  {
+    "user": "8aeab9a94db0a575ab578df25da500c93fcd17e5edb0f6625c92ddddd81df6a9a876caf35581c36ecbe357ad560446d26d0ebe79d59c2e7b7db9c5e1a704f7de",
+    "pwd": "a696fdd194fdd0570fc9d8765657c4fd55a73f51a03e010e6959aebbe0ee120a4a1da795c069825f7186de2671606c8ad071cb5e92c473bf19f451e17f9ec62c"
+  },
+  [
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/html.png",
+      "nameLangage": "HTML5",
+      "styleBar": "",
+      "pourcentage": "80",
+      "color": "#ff8000"
+    },
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/css.png",
+      "nameLangage": "CSS3",
+      "styleBar": "",
+      "pourcentage": "80",
+      "color": "#0080ff"
+    },
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/sass.png",
+      "nameLangage": "Sass",
+      "styleBar": "",
+      "pourcentage": "78",
+      "color": "#bf4080"
+    },
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/js.png",
+      "nameLangage": "JavaScript",
+      "styleBar": "",
+      "pourcentage": "75",
+      "color": "#ecce48"
+    },
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/bootstrap.png",
+      "nameLangage": "Bootstrap",
+      "styleBar": "",
+      "pourcentage": "72",
+      "color": "#7952b3"
+    },
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/react.png",
+      "nameLangage": "React",
+      "styleBar": "",
+      "pourcentage": "75",
+      "color": "#61dafb"
+    },
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/angular-logo.png",
+      "nameLangage": "Angular JS",
+      "styleBar": "AngularJS",
+      "pourcentage": "75",
+      "color": "#d7343f"
+    },
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/angular-logo.png",
+      "nameLangage": "Angular 9",
+      "styleBar": "Angular",
+      "pourcentage": "60",
+      "color": "#df2e31"
+    },
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/nodejs.png",
+      "nameLangage": "Node.js",
+      "styleBar": "Nodejs",
+      "pourcentage": "65",
+      "color": "#74ac64"
+    },
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/java.png",
+      "nameLangage": "Java SE",
+      "styleBar": "Java",
+      "pourcentage": "40",
+      "color": "#0078c4"
+    },
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/vueJs.png",
+      "nameLangage": "vue JS",
+      "styleBar": "Java",
+      "pourcentage": "40",
+      "color": "#41B883"
+    }
   ]
-,
-"PierreLANGE":{
-  "user":"pierre.lange",
-  "pwd":"a696fdd194fdd0570fc9d8765657c4fd55a73f51a03e010e6959aebbe0ee120a4a1da795c069825f7186de2671606c8ad071cb5e92c473bf19f451e17f9ec62c"
-}
-}
+]
