@@ -1,24 +1,22 @@
-{
-  "civilite": {
+[
+  {
     "nom": "Pierre LANGE",
     "anneExperience": "11 années d'expérience",
     "situation": "Marié, 1 enfant",
     "permis": " ans / Permis B",
     "adressePortfolio": "https://cv-pierre-lange.herokuapp.com/Portfolio-pierre-lange.pdf"
   },
-  "adresse": {
+  {
     "portable": "06 23 95 24 02",
     "email": "pierre.lange@gmail.com",
     "lieu": "10 rue Pablo Neruda 77200 Torcy"
   },
-  "poste": {
-    "libelle": "Concepteur Développeur front-end"
-  },
-  "domaineDeComp": {
+  { "libelle": "Concepteur Développeur front-end" },
+  {
     "libelleObjectif": "Souhaite acquérir des compétences complémentaires sur : SYMFONY + REACT - SYMFONY + ANGULAR - REACT + NODE.JS",
     "libelleDomaineDeComp": "HTML 5 / CSS 3 - Bootstrap - JQuery - Angular JS - ANGULAR 2/9 - React JS - Nodes.js"
   },
-  "domaineDeCompDatas": [
+  [
     {
       "dataLibelle": "Médiathèque (Angular JS)",
       "dataLink": "https://mediatheque-disquaire.herokuapp.com",
@@ -35,7 +33,7 @@
       "dataText": "https://cv-pierre-lange.herokuapp.com"
     }
   ],
-  "formations": [
+  [
     {
       "annee": "09-2019",
       "titre": "Formation Concepteur Développeur Front End / APP Boulogne",
@@ -57,7 +55,7 @@
       "text": "Contrat de qualification : window 3.1 / windows 95 / étude hardware"
     }
   ],
-  "experiences": [
+  [
     {
       "periode": "2013-2019",
       "titre": "Ingénieur Concepteur Développeur",
@@ -124,18 +122,18 @@
       ]
     }
   ],
-  "hobbys": [
+  [
     {
       "libelle": "M.A.O / sculpture sur bois",
       "link": "https://pierrelange.wixsite.com/stone-co",
       "textLink": "https://pierrelange.wixsite.com/stone-co"
     }
   ],
-  "PierreLANGE": {
+  {
     "user": "8aeab9a94db0a575ab578df25da500c93fcd17e5edb0f6625c92ddddd81df6a9a876caf35581c36ecbe357ad560446d26d0ebe79d59c2e7b7db9c5e1a704f7de",
     "pwd": "a696fdd194fdd0570fc9d8765657c4fd55a73f51a03e010e6959aebbe0ee120a4a1da795c069825f7186de2671606c8ad071cb5e92c473bf19f451e17f9ec62c"
   },
-  "ddc": [
+  [
     {
       "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/html.png",
       "nameLangage": "HTML5",
@@ -205,6 +203,13 @@
       "styleBar": "Java",
       "pourcentage": "40",
       "color": "#0078c4"
+    },
+    {
+      "imgBar": "https://serveur-node-mediatheque.herokuapp.com/imgsProgBarres/java.png",
+      "nameLangage": "Java JEE",
+      "styleBar": "Java",
+      "pourcentage": "40",
+      "color": "#000078"
     }
   ]
-}
+]
