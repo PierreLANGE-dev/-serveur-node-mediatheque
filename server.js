@@ -1,6 +1,6 @@
 ﻿var express = require("express"),
   fichesRouter = require("./router/fiches"),
-  emplacementsRouter = require("./router/emplacements"),
+  emplacementsRouter = require("./router/emplacements"),  
   app = express();
 
 var cors = require("cors");
@@ -18,7 +18,9 @@ var port = process.env.PORT || 8082; // local tu définis ton port toi même // 
 app
   .listen(port, function() {
     process.stdout.write("\033c");
+
     console.log("Server express ecoute sur le port %s", port);
+
   })
   .on("error", function(e) {
     console.error(e.message);
