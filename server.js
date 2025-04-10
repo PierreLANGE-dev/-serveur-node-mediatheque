@@ -1,6 +1,7 @@
 ﻿var express = require("express"),
   fichesRouter = require("./router/fiches"),
   emplacementsRouter = require("./router/emplacements"),  
+  cvRouter = require("./router/cv"),
   app = express();
 
 var cors = require("cors");
@@ -10,6 +11,7 @@ app.use(cors()); // Ne jamais enlever les limits
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 app.use(express.static(__dirname));
+app.use("/", cvRouter);
 app.use("/", fichesRouter);
 app.use("/", emplacementsRouter);
 
