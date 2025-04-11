@@ -4,7 +4,7 @@
     "anneExperience": "11 années d'expérience",
     "situation": "Marié, 1 enfant",
     "permis": " ans / Permis B",
-    "adressePortfolio": "https://cv-pierre-lange.herokuapp.com/Portfolio-pierre-lange.pdf"
+    "adressePortfolio": "https://cv-pierre-lange-37380b7802a6.herokuapp.com//Portfolio-pierre-lange.pdf"
   },
   {
     "portable": "06 23 95 24 02",
@@ -29,8 +29,8 @@
     },
     {
       "dataLibelle": "Ce CV en ligne React.JS",
-      "dataLink": "https://cv-pierre-lange.herokuapp.com",
-      "dataText": "https://cv-pierre-lange.herokuapp.com"
+      "dataLink": "https://cv-pierre-lange-37380b7802a6.herokuapp.com/",
+      "dataText": "https://cv-pierre-lange-37380b7802a6.herokuapp.com/"
     }
   ],
   [
