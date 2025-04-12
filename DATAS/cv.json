@@ -13,7 +13,7 @@
   },
   { "libelle": "Concepteur Développeur front-end" },
   {
-    "libelleObjectif": "Souhaite acquérir des compétences complémentaires sur : SYMFONY + REACT - SYMFONY + ANGULAR - REACT + NODE.JS",
+    "libelleObjectif": "Souhaite acquérir des compétences complémentaires",
     "libelleDomaineDeComp": "HTML 5 / CSS 3 - Bootstrap - JQuery - Angular JS - ANGULAR 2/9 - React JS - Nodes.js"
   },
   [
@@ -57,6 +57,33 @@
   ],
   [
     {
+      "periode": "09/2022-06/2024",
+      "titre": "Formateur",
+      "titreUP": "Mairie(CHAMPS SUR MARNE)",
+      "text": [
+        {
+          "titre": "Animation d'un atelier informatique",
+          "commentaire": "Formation de petits groupes de personnes âgées au rudiment de l'informatique comme :"
+        },
+        {
+          "titre": "",
+          "commentaire": "Reconnaitre le matériel."
+        }, 
+        {
+          "titre": "",
+          "commentaire": "Utilisation de la souris."
+        },
+        {
+          "titre": "",
+          "commentaire": "Utilisation du clavier et des raccourcis claviers généraux et ceux de Windows."
+        },
+        {
+          "titre": "",
+          "commentaire": "Utilisation internet."
+        }
+      ]
+    },
+    {
       "periode": "2013-2019",
       "titre": "Ingénieur Concepteur Développeur",
       "titreUP": "SQLI(SSII - LEVALLOIS-PERRET)",
@@ -88,7 +115,7 @@
           "titre": "",
           "commentaire": "GROUPAMA / GGvie - Renfort en paramétrage CRM interne à la branche GGVie de Groupama"
         },
-        {
+        {U
           "titre": "",
           "commentaire": "Ring Tour / CRM - publications journalières et hebdomadères"
         },
