@@ -19,13 +19,13 @@
   [
     {
       "dataLibelle": "Médiathèque (Angular JS)",
-      "dataLink": "https://mediatheque-disquaire.herokuapp.com",
-      "dataText": "https://mediatheque-disquaire.herokuapp.com"
+      "dataLink": "https://mediatheque-disquaire-abaf224fe05d.herokuapp.com/",
+      "dataText": "https://mediatheque-disquaire-abaf224fe05d.herokuapp.com/"
     },
     {
       "dataLibelle": "Démo React.JS Calm thème",
-      "dataLink": "https://app-demo-react-calmtheme.herokuapp.com",
-      "dataText": "https://app-demo-react-calmtheme.herokuapp.com"
+      "dataLink": "https://demo-react-calmtheme-6679d60a0790.herokuapp.com/",
+      "dataText": "https://demo-react-calmtheme-6679d60a0790.herokuapp.com/"
     },
     {
       "dataLibelle": "Ce CV en ligne React.JS",
